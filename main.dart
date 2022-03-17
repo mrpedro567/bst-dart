@@ -12,4 +12,9 @@ void main(){
   tree.insert(90);
 
   tree.inOrder();
+
+  print("#########");
+
+  tree.deleteKey(10);
+  tree.inOrder();
 }
