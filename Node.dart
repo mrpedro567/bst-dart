@@ -1,7 +1,15 @@
 /**
+ * Interface Node
+ */
+abstract class INode {
+  late int key;
+  Node? right, left;
+}
+
+/**
  * TAD para nó de uma arvore
  */
-class Node {
+class Node implements INode{
 
   /**
    * Dart  não possui nomes como private ou public para definir o escopo

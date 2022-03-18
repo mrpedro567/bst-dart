@@ -1,7 +1,20 @@
 import './Node.dart';
 import './TAD.dart';
 
-class BinarySearchTree extends TAD{
+/**
+ * Interface BST
+ */
+abstract class IBinarySearchTree {
+  Node? root;
+  
+  void insert(int key);
+  void deleteKey(int key);
+  void inOrder();
+  void preOrder();
+  void postOrder();
+}
+
+class BinarySearchTree extends TAD implements IBinarySearchTree{
   Node? _root;
 
   /**
